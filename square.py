@@ -1,6 +1,6 @@
-def square(n):
+def square(n, fn = lambda x: x**2):
 
-	return[i**2 for i in range(n)]
+	return[fn(i) for i in range(n)]
 
 print(square(10))
 
