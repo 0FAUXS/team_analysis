@@ -1,6 +1,8 @@
-def square(n, power=2):
-'''(number variable, power variable) call for n to power; now with default of 2'''
-	return[i**power for i in range(n)]
+
+def square(n, fn = lambda x: x**2):
+
+	return[fn(i) for i in range(n)]
+
 
 print(square(10))
 
